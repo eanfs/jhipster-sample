@@ -1,0 +1,28 @@
+
+<div>
+    <h2><span translate="springblogApp.blog.detail.title">Blog</span> {{vm.blog.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="springblogApp.blog.name">Name</span></dt>
+        <dd>
+            <span>{{vm.blog.name}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="springblogApp.blog.handler">Handler</span></dt>
+        <dd>
+            <span>{{vm.blog.handler}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="springblogApp.blog.user">User</span></dt>
+        <dd>
+            {{vm.blog.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
